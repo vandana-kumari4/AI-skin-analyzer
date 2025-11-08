@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Skincare Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">✨ AI Skincare Analyzer</h1>
+    
+    <!-- Upload Box -->
+    <div id="upload-box" class="box">
+        <p class="subtitle">Upload your face photo</p>
+
+        <label class="upload-label">
+            <input type="file" id="imageUpload" accept="image/*">
+            Click to Upload Image
+        </label>
+
+        <img id="preview" class="hidden">
+
+        <button id="analyzeBtn" class="hidden" onclick="startAnalysis()">Analyze Skin</button>
+    </div>
+
+    <!-- Loading / Scan Animation -->
+    <div id="loading-box" class="box hidden">
+        <div class="loader"></div>
+        <p>Analyzing your skin…</p>
+    </div>
+
+    <!-- Result Box -->
+    <div id="result-box" class="box hidden">
+        <h2>Your Skin Analysis</h2>
+
+        <p><strong>Skin Type:</strong> <span id="skinType"></span></p>
+        <p><strong>Concerns:</strong> <span id="concerns"></span></p>
+
+        <h3>Recommended Products</h3>
+        <div id="products"></div>
+
+        <button class="restart" onclick="restart()">Scan Again</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

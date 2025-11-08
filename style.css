@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffe6f7, #e3d2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 16px;
+}
+
+.upload-label {
+    display: block;
+    background: #f3f3f3;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px dashed #c7a7ff;
+    margin-bottom: 15px;
+}
+
+#preview {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+button {
+    background: #9d63ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.loader {
+    border: 6px solid #eee;
+    border-top: 6px solid #a16bff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.product-card {
+    background: #faf7ff;
+    padding: 12px;
+    border-radius: 15px;
+    margin-top: 12px;
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.restart {
+    margin-top: 20px;
+    background: #ff76b8;
+}
